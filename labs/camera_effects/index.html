@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<title>Canvas Video Playback</title>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			 body
+			 {
+			 	background: black;
+			 }
+
+			 canvas
+			 {
+			 	position:absolute;
+			 	left:50%;
+			 	top:50%;
+			 	margin-left:-320px;
+			 	margin-top:-240px;
+			 	border:1px solid #333;
+			 }
+
+			 #canvasloader-container{
+			 	position: fixed;
+			 	height:40px;
+			 	width:40px;
+				left: 50%;
+				top: 50%;
+				margin-left: 320px;
+				margin-top: 160px;
+				z-index: 9999;
+				color:white;
+			 }
+			 #canvasloader-container canvas
+			 {
+			 	border:none;
+			 }
+
+			 .label
+			 {
+			 	position: fixed;
+			 	left: 50%;
+				top: 50%;
+				color:white;
+			 	height:40px;
+			 	width:150px;
+			 	color:white;
+			 	font-family: Arial, Helvetica, Sans-Serif;
+			 	font-size:12px ;
+			 }
+
+		</style>
+	</head>
+	<body>
+		<div id='canvasloader-container'></div>
+		<div class='label'>Loading Video</div>
+		<script src="js/libs/heartcode-canvasloader-min.js"></script>
+		<script data-main="js/main" src="js/libs/require.js"></script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</body>
+</html>

@@ -1,0 +1,595 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"canvas",
+				"canvasloader-container"
+			],
+			[
+				"_file",
+				"_fileName"
+			],
+			[
+				"_fie",
+				"_fileName"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"trac",
+				"tracked25"
+			],
+			[
+				"is",
+				"isIOS"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ple",
+				"pledge_message"
+			],
+			[
+				"Browser",
+				"BrowserDetect"
+			],
+			[
+				"B",
+				"BrowserDetect"
+			],
+			[
+				"chec",
+				"checkbox"
+			],
+			[
+				"che",
+				"checkboxes"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"Conta",
+				"ContactUs"
+			],
+			[
+				"Pr",
+				"Privacy"
+			],
+			[
+				"Ter",
+				"TermsOfUse"
+			],
+			[
+				"Fo",
+				"FollowAndShare"
+			],
+			[
+				"Star",
+				"StartYourProject"
+			],
+			[
+				"windo",
+				"windowHeight"
+			],
+			[
+				"body",
+				"bodyHeight"
+			],
+			[
+				"isi",
+				"isiDiff"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"get",
+				"getPosition"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pl",
+				"pledge_message"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"Projec",
+				"ProjectLuna"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/core/Application.js",
+			"settings":
+			{
+				"buffer_size": 2208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 824,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/**\n * Canvas Camera Class;\n *\n * @author Jay Moretti (jrmoretti@gmail.com)\n * @version 0.0.1\n * @param Number width	Width of the video player\n * @param Number height Height of the video player\n * @returns CanvasElement	Appends a canvas element to the document root.\n * @todo Add Filter and Blend Mode Support\n * @todo Add target container support\n * @todo Add frameblending\n * @todo Add Sound Support\n *\n */\nfunction Video(params) /*width, height, customFPS*/\n{\n	var scope=this;\n	\n	var filter = null;		// Expects function to be passed via setFilter\n	this.filter = \"none\";	// Default dat.gui option\n	var blendmode = null;	// Expects function to be passed via setBlendMode\n	this.blendmode = \"none\";// Default dat.gui option\n	var effect = Effects.ANALOG;		// Expects function to be passed via setEffect\n	this.effect = \"Analog\";	// Default dat.gui option\n\n	this.timer = null;\n	this.state = CameraState.LOADING;\n		\n	/////////////////////\n	// playback params //\n	/////////////////////\n	this.fps = params.customFPS ? params.customFPS : 24;\n	var fps = (1/scope.fps)*1000;\n\n	////////////////////////\n	// The canvas output  //\n	////////////////////////\n	this.canvas = document.createElement('canvas');\n	this.canvasContext = this.canvas.getContext('2d');\n	this.canvas.width = params.width;\n	this.canvas.height = params.height;\n	document.body.appendChild(this.canvas);\n	\n	//////////////////////\n	// The other stuff  //\n	//////////////////////\n	this.width = params.width;\n	this.height = params.height;\n	\n	this.callback = null;\n\n	function initialize()\n	{\n		// get camera\n	}\n\n	function render()\n	{\n		// get frame bitmapData\n		var idata = camera.idata;\n		\n		if(filter!==null)\n			idata = applyFilter(idata);\n\n		if(blendmode!==null)\n			idata = applyBlendMode(idata);\n			\n		if(effect!==null)\n			idata = applyEffect(idata);\n\n		scope.canvasContext.putImageData(idata, 0,0);\n		\n		scope.timer = clearTimeout();\n		scope.timer = setTimeout( render, fps, scope.currentFrame );		\n	}\n\n	function applyFilter(idata)\n	{\n		return filter.call(scope, idata);\n	}\n	\n	function applyEffect(idata)\n	{\n		return effect.call(scope, idata);\n	}\n\n	this.setCallback = function(fn)\n	{\n		scope.callback = fn;\n	};\n\n	/////////////////////////////////////////////////////////////\n	// Sets the filter function to run over individual frames  //\n	/////////////////////////////////////////////////////////////\n	this.setFilter = function(fn)\n	{\n		filter = fn;\n	};\n	\n	///////////////////////////////////////////////////////\n	// Sets the blendmode to run over individual frames  //\n	///////////////////////////////////////////////////////\n	this.setBlendMode = function(fn)\n	{\n		blendmode = fn;\n	};\n	\n	///////////////////////////////////////////////////////\n	// Sets the effect to run over individual frames  //\n	///////////////////////////////////////////////////////\n	this.setEffect = function(fn)\n	{\n		effect = fn;\n	};\n\n	//////////////////\n	// Clear Filter //\n	//////////////////\n	this.clearFilters = function()\n	{\n		log(\"Clear filter\");\n		filter = null;\n	};\n\n	///////////////////////\n	// Clear Blend Modes //\n	///////////////////////\n	this.clearBlendMode = function()\n	{\n		blendmode = null;\n	};\n	\n	///////////////////////\n	// Clear Effects //\n	///////////////////////\n	this.clearEffects = function()\n	{\n		effect = null;\n	};\n\n	initialize();\n};\n\nCamera.prototype = {};\n\nCameraState = {\n	LOADING : \"CameraLoading\",\n	READY : \"CameraReady\",\n	PLAYING : \"CameraPlaying\",\n	PAUSED : \"CameraPaused\",\n	STOPPED : \"CameraStopped\"\n};\nvar RTCPeerConnection = null;\nvar getUserMedia = null;\nvar attachMediaStream = null;\nvar reattachMediaStream = null;\nvar webrtcDetectedBrowser = null;\n\nif (navigator.mozGetUserMedia) {\n  console.log(\"This appears to be Firefox\");\n\n  webrtcDetectedBrowser = \"firefox\";\n\n  // The RTCPeerConnection object.\n  RTCPeerConnection = mozRTCPeerConnection;\n\n  // The RTCSessionDescription object.\n  RTCSessionDescription = mozRTCSessionDescription;\n\n  // The RTCIceCandidate object.\n  RTCIceCandidate = mozRTCIceCandidate;\n\n  // Get UserMedia (only difference is the prefix).\n  // Code from Adam Barth.\n  getUserMedia = navigator.mozGetUserMedia.bind(navigator);\n\n  // Attach a media stream to an element.\n  attachMediaStream = function(element, stream) {\n    console.log(\"Attaching media stream\");\n    element.mozSrcObject = stream;\n    element.play();\n  };\n\n  reattachMediaStream = function(to, from) {\n    console.log(\"Reattaching media stream\");\n    to.mozSrcObject = from.mozSrcObject;\n    to.play();\n  };\n\n  // Fake get{Video,Audio}Tracks\n  MediaStream.prototype.getVideoTracks = function() {\n    return [];\n  };\n\n  MediaStream.prototype.getAudioTracks = function() {\n    return [];\n  };\n} else if (navigator.webkitGetUserMedia) {\n  console.log(\"This appears to be Chrome\");\n\n  webrtcDetectedBrowser = \"chrome\";\n\n  // The RTCPeerConnection object.\n  RTCPeerConnection = webkitRTCPeerConnection;\n  \n  // Get UserMedia (only difference is the prefix).\n  // Code from Adam Barth.\n  getUserMedia = navigator.webkitGetUserMedia.bind(navigator);\n\n  // Attach a media stream to an element.\n  attachMediaStream = function(element, stream) {\n    element.src = webkitURL.createObjectURL(stream);\n  };\n\n  reattachMediaStream = function(to, from) {\n    to.src = from.src;\n  };\n\n  // The representation of tracks in a stream is changed in M26.\n  // Unify them for earlier Chrome versions in the coexisting period.\n  if (!webkitMediaStream.prototype.getVideoTracks) {\n    webkitMediaStream.prototype.getVideoTracks = function() {\n      return this.videoTracks;\n    };\n    webkitMediaStream.prototype.getAudioTracks = function() {\n      return this.audioTracks;\n    };\n  }\n\n  // New syntax of getXXXStreams method in M26.\n  if (!webkitRTCPeerConnection.prototype.getLocalStreams) {\n    webkitRTCPeerConnection.prototype.getLocalStreams = function() {\n      return this.localStreams;\n    };\n    webkitRTCPeerConnection.prototype.getRemoteStreams = function() {\n      return this.remoteStreams;\n    };\n  }\n} else {\n  console.log(\"Browser does not appear to be WebRTC-capable\");\n}",
+			"file": "js/canvas/media/video/Camera.js",
+			"file_size": 6031,
+			"file_write_time": 130098257750000000,
+			"settings":
+			{
+				"buffer_size": 6025,
+				"line_ending": "Unix",
+				"name": "Camera.js"
+			}
+		},
+		{
+			"file": "js/utils/Utils.js",
+			"settings":
+			{
+				"buffer_size": 3602,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 271.0,
+		"selected_items":
+		[
+			[
+				"Mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"sys.path",
+			"import sys",
+			"sys.path",
+			"import sys",
+			"sys.path[3]",
+			"sys.path",
+			"sys.path[-1]",
+			"import sys",
+			"sys.path[-1]",
+			"clear",
+			"sys.path[-1]",
+			"sys.path.length()",
+			"sys.path.length",
+			"sys.path",
+			"import sys",
+			"sys.path.append('lib')",
+			"import"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Jay/work/Projects/_labs/__html5/interactive_video/js/controllers/video/VideoController.js",
+		"/Jay/work/HAUS/__labs/canvas_video/effects/index.html",
+		"/Jay/work/HAUS/__labs/canvas_video/effects/js/main.js",
+		"/Jay/work/HAUS/__labs/canvas_video/effects/js/core/Application.js",
+		"/Jay/work/HAUS/__old/KetelOne/frontend/js/ui.js",
+		"/Jay/work/HAUS/__old/KetelOne/frontend/index.php",
+		"/Jay/work/HAUS/__old/KetelOne/frontend/.htaccess",
+		"/Users/jay/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jay/Library/Application Support/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
+		"/Jay/work/HAUS/__current/Luna/www/index.html",
+		"/Jay/work/HAUS/__current/Luna/www/css/pages/home.css",
+		"/Jay/work/HAUS/__current/Luna/www/css/ios.css",
+		"/Jay/work/HAUS/__current/Luna/www/css/common/legal.css",
+		"/Jay/work/HAUS/__current/Luna/www/js/core/application.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/views/facts.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/views/start.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/model/settings.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/utils/mediamind.js",
+		"/Jay/work/HAUS/__current/Luna/www/pledges/index.html",
+		"/Jay/work/HAUS/__current/Luna/www/js/edge/edgeScroller.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/display/ViewManager.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/views/pledges.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/utils/Utils.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/views/follow.js",
+		"/Jay/work/HAUS/__current/Luna/www/css/style.css",
+		"/Jay/work/HAUS/__current/Luna/www/css/print.css",
+		"/Jay/work/HAUS/__current/Luna/www/404.html",
+		"/Jay/work/HAUS/__current/Luna/www/dd.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/facts/sleep.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/start/pledges.html",
+		"/Jay/work/HAUS/__current/Luna/www/js/config.js",
+		"/Jay/work/HAUS/__current/Luna/www/css/pages/about.css",
+		"/Users/jay/Desktop/TODAY'S LIST (by priority).diff",
+		"/Jay/work/HAUS/__current/Luna/www/pages/facts/anatomy.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/facts/lunesta.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/start/pledge.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/start/tracker.html",
+		"/Jay/work/HAUS/__current/Luna/www/js/edge/luna_aos_edge.js",
+		"/Jay/work/HAUS/__current/Luna/www/pledges/share.html",
+		"/Jay/work/HAUS/__current/Luna/www/share.html",
+		"/Jay/work/HAUS/__current/Luna/www/aos.html",
+		"/Jay/work/HAUS/__current/Luna/www/css/pages/facts.css",
+		"/Jay/work/HAUS/__current/Luna/www/pages/facts.html",
+		"/Jay/work/HAUS/__current/Luna/www/css/common/common.css",
+		"/Jay/work/HAUS/__current/Luna/www/pages/about.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/follow.html",
+		"/Jay/work/HAUS/__current/Luna/www/js/edge/luna_home_edge.js",
+		"/Jay/work/HAUS/__current/Luna/www/css/pages/pledges.css",
+		"/Jay/work/HAUS/__current/Luna/www/js/utils/googleAnalytics.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/nav/Nav.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/views/home.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/edge/luna_aos_edgeActions.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/views/landing.js",
+		"/Jay/work/HAUS/__current/Luna/www/pages/isi.html",
+		"/Jay/work/HAUS/__current/Luna/www/js/edge/requireEdge.js",
+		"/Jay/work/HAUS/__current/Luna/www/js/main.js",
+		"/Jay/work/HAUS/__current/Luna/www/css/pages/start.css",
+		"/Jay/work/HAUS/__current/Luna/www/js/edge/luna_aosAssets.js",
+		"/Jay/work/HAUS/__current/Luna/www/css/common/footer.css",
+		"/Jay/work/HAUS/__current/Luna/www/pages/start.html",
+		"/Jay/work/Stuff/libs/hype-hype-605a391/src/hype/framework/core/ObjectPool.as",
+		"/Users/jay/Desktop/Voodoo/js/core/Application.js",
+		"/Users/jay/Desktop/Voodoo/js/libs/loading/llcoolj.js",
+		"/Users/jay/Desktop/Voodoo/css/panels/panels.css",
+		"/Users/jay/Desktop/Voodoo/css/styles.css",
+		"/Users/jay/Desktop/Voodoo/css/timeline/timeline.css",
+		"/Users/jay/Desktop/Voodoo/css/common/common.css",
+		"/Users/jay/Desktop/Voodoo/css/canvas/canvas.css",
+		"/Users/jay/Desktop/Voodoo/js/utils/Utils.js",
+		"/Users/jay/Desktop/Voodoo/somejs.js",
+		"/Jay/work/HAUS/__current/Luna/www/_styleguide/index.html",
+		"/Jay/work/HAUS/__current/Luna/www/_styleguide/css/main.css",
+		"/Jay/work/HAUS/__current/Luna/www/_styleguide/css/styleguide.css",
+		"/Jay/work/HAUS/__current/Luna/www/css/pages/follow.css",
+		"/Jay/work/HAUS/__current/Luna/www/pages/pledges.html",
+		"/Jay/work/HAUS/__current/Luna/www/pie/PIE.js",
+		"/Jay/work/HAUS/__current/Luna/www/pledges/caffeine/index.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/contact-us.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/medical-disclaimer.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/terms-of-use.html",
+		"/Jay/work/HAUS/__current/Luna/www/pages/privacy.html",
+		"/Users/jay/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Jay/work/HAUS/__current/Luna/Luna.sublime-workspace",
+		"/Jay/work/HAUS/__current/Luna/Luna.sublime-project"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"zzz",
+			"init",
+			"insomnia",
+			"stage",
+			"&reg;",
+			"®",
+			"&reg;",
+			"log",
+			"log(",
+			"log",
+			"Doctor",
+			"®",
+			"or print",
+			"text_exercise",
+			"patterns",
+			"	",
+			"Project",
+			"PSD",
+			"lunesta",
+			"endbox",
+			"img/",
+			"images/",
+			"*",
+			"_load",
+			");\n",
+			"%;",
+			"Sleep.",
+			",\n",
+			"patterns",
+			"stage",
+			"sleep"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"&reg;",
+			"img/aos/",
+			"img/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/core/Application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/canvas/media/video/Camera.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1561,
+								1561
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Camera.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 931.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/utils/Utils.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3370,
+								3370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 128.0
+	},
+	"project": "canvas_video.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/jay/Desktop/Voodoo/voodoo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
