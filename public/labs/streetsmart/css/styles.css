@@ -1,0 +1,322 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600|Roboto:400,400italic,700,700italic);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_layout\.sass}line{font-family:\000031}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_layout\.sass}line{font-family:\0000311}}
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: black;
+  color: #444444;
+  font-family: "open sans", arial, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_app\.sass}line{font-family:\000031}}
+.app {
+  width: 100%;
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_map\.sass}line{font-family:\000031}}
+#map-canvas {
+  height: 100%;
+  -webkit-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_map\.sass}line{font-family:\000039}}
+.disabled {
+  pointer-events: none;
+  opacity: 0.75;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_map\.sass}line{font-family:\0000318}}
+.enabled {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\000031}}
+.controls {
+  position: absolute;
+  left: 350px;
+  top: 50px;
+  -webkit-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\000036}}
+  .controls .zoom {
+    width: 106px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\000038}}
+    .controls .zoom .zoom-up, .controls .zoom .zoom-down {
+      background: #4481fe;
+      color: white;
+      width: 36px;
+      height: 36px;
+      font-size: 28px;
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      -webkit-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      -moz-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      -ms-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      -o-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+      transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000318}}
+    .controls .zoom .zoom-up {
+      padding-top: 4px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000320}}
+    .controls .zoom .zoom-down {
+      top: -36px;
+      left: 36px;
+      padding-top: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000324}}
+    .controls .zoom .zoom-up:hover, .controls .zoom .zoom-down:hover {
+      background: white;
+      color: #4481fe; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000327}}
+.closed {
+  left: 275px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000331}}
+.answer-submit {
+  background: #4481fe;
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: 86px;
+  width: 300px;
+  height: 36px;
+  -webkit-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000340}}
+  .answer-submit span {
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 9px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000345}}
+  .answer-submit .answer-yes, .answer-submit .answer-no {
+    color: white;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    left: 229px;
+    top: -16px;
+    text-align: center;
+    padding-top: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000356}}
+  .answer-submit .answer-no {
+    top: -52px;
+    left: 265px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000359}}
+  .answer-submit .answer-yes:hover {
+    background: #67983c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000361}}
+  .answer-submit .answer-no:hover {
+    background: #f92521; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_controls\.sass}line{font-family:\0000364}}
+.answer-submit.closed {
+  top: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\000032}}
+.question-cards div {
+  position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\000034}}
+.question-cards .card {
+  overflow: hidden;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  height: 255px;
+  font-size: 20px;
+  background: #fefefe;
+  border-left: 1px solid whitesmoke;
+  border-top: 1px solid #f4f4f4;
+  border-right: 1px solid #fafafb;
+  border-bottom: 1px solid #e8e8e8;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000321}}
+  .question-cards .card .question-header, .question-cards .card .caption {
+    padding: 15px;
+    width: 100%;
+    font-family: "open sans";
+    border-bottom: 1px #e8e8e8 solid;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    color: #acacac; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000328}}
+  .question-cards .card .question-header {
+    padding-top: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000330}}
+    .question-cards .card .question-header h1 {
+      color: #6c6c6c;
+      font-weight: 400;
+      font-style: italic; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000334}}
+  .question-cards .card .caption {
+    font-family: "roboto";
+    overflow: hidden;
+    height: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000338}}
+    .question-cards .card .caption h1 {
+      font-weight: 400;
+      margin-top: 60px;
+      font-style: normal;
+      color: #f68c1e;
+      margin-bottom: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000344}}
+    .question-cards .card .caption p {
+      display: inline-block;
+      width: 250px;
+      font-weight: 400;
+      font-size: 12px;
+      hyphens: all;
+      line-height: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000351}}
+  .question-cards .card .question-footer {
+    top: 180px;
+    left: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000354}}
+    .question-cards .card .question-footer a {
+      display: inline-block;
+      overflow: hidden;
+      width: 150px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      position: relative;
+      text-decoration: none;
+      top: 37px;
+      color: #4484f2;
+      padding-top: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000366}}
+      .question-cards .card .question-footer a img {
+        top: -3px;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000371}}
+    .question-cards .card .question-footer a:hover, .question-cards .card .question-footer a:visited {
+      text-decoration: none;
+      color: #4484f2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000374}}
+.question-cards .answer {
+  height: 36px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000376}}
+  .question-cards .answer .question-header {
+    padding: 8px;
+    padding-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000379}}
+    .question-cards .answer .question-header h1 {
+      font-size: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000382}}
+.answer-pin {
+  cursor: pointer;
+  opacity: 0;
+  position: fixed;
+  left: 300px;
+  top: 58px;
+  -webkit-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 250ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Jay\/work\/HOOK\/__current\/Google\/Streetsmart\/Prototype\/src\/styles\/src\/_card\.sass}line{font-family:\0000390}}
+.draggable {
+  opacity: 1;
+  left: 320px; }
+
+
+/*# sourceMappingURL=styles.css.map*/

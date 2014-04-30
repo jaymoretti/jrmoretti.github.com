@@ -1,0 +1,1155 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"current",
+				"currentId"
+			],
+			[
+				"color",
+				"color_tooltip"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"color_ho",
+				"color_hover_box_part"
+			],
+			[
+				"update",
+				"updateHero"
+			],
+			[
+				"grades",
+				"grades_local_offers"
+			],
+			[
+				"exterior",
+				"exterior_colors"
+			],
+			[
+				"change",
+				"changeInteriorColor"
+			],
+			[
+				"exter",
+				"exteriorColors"
+			],
+			[
+				"cl",
+				"classic_silver"
+			],
+			[
+				"hy",
+				"hybrid_xle"
+			],
+			[
+				"cur",
+				"curPage"
+			],
+			[
+				"left",
+				"leftArrow"
+			],
+			[
+				"b",
+				"backup_monitor"
+			],
+			[
+				"for",
+				"formattedValue"
+			],
+			[
+				"summ",
+				"summary_accessories"
+			],
+			[
+				"inter",
+				"interiorColors"
+			],
+			[
+				"ex",
+				"exteriorColor"
+			],
+			[
+				"dis",
+				"_distance"
+			],
+			[
+				"_",
+				"_distance"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"_ste",
+				"_steps"
+			],
+			[
+				"next",
+				"nextStep"
+			],
+			[
+				"_step",
+				"_stepIndex"
+			],
+			[
+				"indica",
+				"indicator_buttons"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"_vi",
+				"_view"
+			],
+			[
+				"in",
+				"indicatorY"
+			],
+			[
+				"sel",
+				"selectedPackages"
+			],
+			[
+				"create",
+				"createImageData"
+			],
+			[
+				"pro",
+				"processFrame"
+			],
+			[
+				"proc",
+				"processFrame"
+			],
+			[
+				"fil",
+				"filterFunction"
+			],
+			[
+				"proces",
+				"processedFrames"
+			],
+			[
+				"proce",
+				"processedFrames"
+			],
+			[
+				"frame",
+				"frameblending"
+			],
+			[
+				"data",
+				"dataOutput"
+			],
+			[
+				"out",
+				"outputImageData"
+			],
+			[
+				"add",
+				"addGUI"
+			],
+			[
+				"Video",
+				"VideoState"
+			],
+			[
+				"PLAY",
+				"PLAYING"
+			],
+			[
+				"RE",
+				"REVERSE"
+			],
+			[
+				"VideoRE",
+				"VideoReversed"
+			],
+			[
+				"cache",
+				"cacheFrames"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"phot",
+				"photos_videos"
+			],
+			[
+				"tr",
+				"tracking"
+			],
+			[
+				"tracking",
+				"tracking_object"
+			],
+			[
+				"new",
+				"newHash"
+			],
+			[
+				"hash",
+				"hasher"
+			],
+			[
+				"IM",
+				"IMAGE_FULLSCREEN"
+			],
+			[
+				"V",
+				"VIDEO_PLAY"
+			],
+			[
+				"S",
+				"split"
+			],
+			[
+				"Bro",
+				"BrowserDetect"
+			],
+			[
+				"sear",
+				"searchString"
+			],
+			[
+				"link",
+				"linkName"
+			],
+			[
+				"onmou",
+				"onmouseup"
+			],
+			[
+				"onM",
+				"onmousemove"
+			],
+			[
+				"drag",
+				"dragHandle"
+			],
+			[
+				"prop",
+				"prop46"
+			],
+			[
+				"li",
+				"linkName"
+			],
+			[
+				"ev",
+				"eVar37"
+			],
+			[
+				"eVar",
+				"eVar37"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"ob",
+				"object"
+			],
+			[
+				"Saf",
+				"safety"
+			],
+			[
+				"Fea",
+				"Features_Specs"
+			],
+			[
+				"C",
+				"Choices"
+			],
+			[
+				"ca",
+				"capability"
+			],
+			[
+				"Capa",
+				"Capability"
+			],
+			[
+				"mtou",
+				"mtouch"
+			],
+			[
+				"e",
+				"email_friend"
+			],
+			[
+				"Ema",
+				"EMAIL_FRIEND"
+			],
+			[
+				"go",
+				"google_plus"
+			],
+			[
+				"toy",
+				"toyota_logo"
+			],
+			[
+				"t",
+				"tablet"
+			],
+			[
+				"vide",
+				"video1"
+			],
+			[
+				"v",
+				"video1"
+			],
+			[
+				"video",
+				"videocontainer"
+			],
+			[
+				"clo",
+				"closeButton"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"ac",
+				"accounts"
+			],
+			[
+				"do",
+				"domain"
+			],
+			[
+				"is",
+				"isDev"
+			],
+			[
+				"get",
+				"getAccount"
+			],
+			[
+				"hide",
+				"hideInfo"
+			],
+			[
+				"dire",
+				"direction"
+			],
+			[
+				"curren",
+				"currentCount"
+			],
+			[
+				"currn",
+				"currentCount"
+			],
+			[
+				"sc",
+				"webkit-scrollbar-thumb"
+			],
+			[
+				"scrol",
+				"webkit-scrollbar"
+			],
+			[
+				"close",
+				"closePopup"
+			],
+			[
+				"img",
+				"webkit-mask-image"
+			],
+			[
+				"webki",
+				"webkit-transform"
+			],
+			[
+				"init",
+				"initAnimation"
+			],
+			[
+				"set",
+				"setPage"
+			],
+			[
+				"discl",
+				"disclosures_height"
+			],
+			[
+				"ver",
+				"verticalDisclosures"
+			],
+			[
+				"chapter",
+				"chapters"
+			],
+			[
+				"fix",
+				"fixFooter"
+			],
+			[
+				"chap",
+				"chapters"
+			],
+			[
+				"real",
+				"realFrameNumber"
+			],
+			[
+				"se",
+				"sectionLength"
+			],
+			[
+				"s",
+				"section"
+			],
+			[
+				"ch",
+				"chapterName"
+			],
+			[
+				"curre",
+				"current"
+			],
+			[
+				"item",
+				"itemBottom"
+			],
+			[
+				"setti",
+				"setTimeout"
+			],
+			[
+				"start",
+				"startingPos"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"DR",
+				"DRAG"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"page",
+				"pageName"
+			],
+			[
+				"directio",
+				"directionY"
+			],
+			[
+				"verti",
+				"verticallogger"
+			],
+			[
+				"d",
+				"distanceY"
+			],
+			[
+				"ore",
+				"orientationHandler"
+			],
+			[
+				"dev",
+				"device"
+			],
+			[
+				"device",
+				"deviceAgent"
+			],
+			[
+				"devi",
+				"deviceAgent"
+			],
+			[
+				"Vertical",
+				"verticalNav"
+			],
+			[
+				"vertical",
+				"verticalNav"
+			],
+			[
+				"chapt",
+				"chapterName"
+			],
+			[
+				"po",
+				"popupOpen"
+			],
+			[
+				"curr",
+				"currentCount"
+			],
+			[
+				"cargo",
+				"cargo_info"
+			],
+			[
+				"di",
+				"direction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 333,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 115.0,
+		"history":
+		[
+			"sys.path",
+			"import sys",
+			"sys.path",
+			"import sys",
+			"sys.path[3]",
+			"sys.path",
+			"sys.path[-1]",
+			"import sys",
+			"sys.path[-1]",
+			"clear",
+			"sys.path[-1]",
+			"sys.path.length()",
+			"sys.path.length",
+			"sys.path",
+			"import sys",
+			"sys.path.append('lib')",
+			"import"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Jay/work/Projects/_Personal/site_2013/css/src/_globals.sass",
+		"/Jay/work/Projects/_Personal/site_2013/node/app.js",
+		"/Jay/work/Projects/_Personal/site_2013/css/config.rb",
+		"/Jay/work/Projects/_Personal/site_2013/css/src/style.sass",
+		"/Jay/work/Projects/_Personal/site_2013/index.html",
+		"/Jay/work/Projects/_Personal/site_2013/js/app.js",
+		"/Jay/work/Projects/_Personal/site_2013/js/main.js",
+		"/Jay/work/Projects/_Personal/site_2013/js/libs/log.js",
+		"/Jay/work/Projects/_Personal/site_2013/css/style.css",
+		"/Jay/work/Projects/_Personal/site_2013/js/libs/log.min.js",
+		"/Jay/work/Projects/_Personal/ChupaFolha/ChupaFolha/manifest.json",
+		"/Jay/work/Projects/_Personal/ChupaFolha/ChupaFolha/chupafolha.js",
+		"/Users/jmoretti/Desktop/cartao",
+		"/Jay/work/HAUS/__current/Clorox/banners/presentation/index.html",
+		"/Jay/work/HAUS/__current/Clorox/banners/presentation/js/app.js",
+		"/Jay/work/HAUS/__current/Clorox/banners/classes/com/clorox/display/BannerBase.as",
+		"/Jay/work/HAUS/__current/Clorox/banners/classes/com/clorox/display/Banner728x90.as",
+		"/Jay/work/HAUS/__current/Clorox/banners/classes/com/clorox/display/Banner300x600.as",
+		"/Jay/work/HAUS/__current/Clorox/banners/classes/com/clorox/display/Banner300x250.as",
+		"/Jay/work/HAUS/__current/Clorox/banners/classes/com/clorox/display/Banner160x600.as",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/index.html",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_hero.scss",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps/Options.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps/Accessories.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps/Summary.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/readme.md",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_build-summary.sass",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_local_offers.scss",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/core/application.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps/Grades.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/hero.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_performance.scss",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_grades.scss",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/utils/Utils.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/ViewMenu.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps/Appearance.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/css/gps.css",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/overlay/compare_grades.html",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/overlay/compare_engines.html",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/configurator/settings.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/main.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/css/style.sass",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/overlay.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/utils/ArrayUtils.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/Threesixty.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/steps/Performance.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/css/style.css",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/css/style.css",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/carousel.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/css/carousel.css",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/libs/jquery.reel-devel.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/js/display/ViewMenu",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_global.sass",
+		"/Jay/work/HAUS/__current/TCom/configurator/model/builder/sass/_tile.sass",
+		"/Users/jmoretti/Desktop/classeLegal.js",
+		"/Applications/MAMP/bin/php/php5.3.6/conf/php.ini",
+		"/Users/jmoretti/HAUS_Dropbox/Dropbox/OFFF-MX/PNGs/2012-08-02_PNGs 2 mins/encode_image.php",
+		"/Jay/work/HAUS/__current/Clorox/banners/300x250/clorox-shrinkage-300x250_spritesheet_jpg Report.txt",
+		"/Jay/work/HAUS/__current/Clorox/banners/300x250/clorox-shrinkage-300x250_lossless Report.txt",
+		"/Jay/work/HAUS/__current/Clorox/banners/300x250/clorox-shrinkage-300x250_lossless.html",
+		"/Jay/work/HAUS/__current/TCom/configurator/js/keyboard.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/js/modelPage.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/js/homepage.js",
+		"/Jay/work/HAUS/__current/TCom/configurator/js/gps.js",
+		"/Jay/work/HAUS/__labs/canvas_video/webworkers/js/core/Application.js",
+		"/Jay/work/HAUS/__labs/canvas_video/webworkers/js/main.js",
+		"/Jay/work/HAUS/__labs/canvas_video/webworkers/js/canvas/media/video/Video.js",
+		"/Jay/work/HAUS/__labs/canvas_video/webworkers/index.html",
+		"/Jay/work/HAUS/__current/TCom/model_gps/model/index.html",
+		"/Jay/work/HAUS/__labs/canvas_video/webworkers/js/effects/filters/Filters.js",
+		"/Jay/work/HAUS/__labs/canvas_video/blend_modes/js/canvas/media/video/Video.js",
+		"/Jay/work/HAUS/__labs/canvas_video/blend_modes/js/core/Application.js",
+		"/Jay/work/HAUS/__labs/canvas_video/blend_modes/js/main.js",
+		"/Jay/work/HAUS/__labs/canvas_video/blend_modes/js/effects/filters/Filters.js",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/js/core/Application.js",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/js/main.js",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/js/canvas/media/video/Video.js",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/videos/c1.js",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/js/utils/Utils.js",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/videos/c1.json",
+		"/Jay/work/HAUS/__labs/canvas_video/playback_control/index.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles/ipad.css",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles/master.css",
+		"/Jay/work/HAUS/__current/KetelOne/README",
+		"/Jay/work/HAUS/__current/KetelOne/pull.php",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/utils.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/core/Preloader.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/structure/VideoPlayer.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/gestures/DragEvent.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/dynamic-brochure.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/libs/analytics/omniture.library.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/main.js",
+		"/Jay/work/HAUS/__current/LandCruiser/website/html/dynamic-brochure.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/libs/analytics/analytics.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles/chapters/capability/underneath/underneath.css",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/display/ViewManager.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/nav/VerticalNav.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/capability/videos/videos.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/capability/buttons/capabilitybuttons.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/structure/Lookbook.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/interior/cardflip/card-flip.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/core/Application.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/structure/verticalnav.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/choices/choices360/rotator.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/interior/cardflip2/card-flip2.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/display/AbstractSection.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/old_ipad.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/iphone.html",
+		"/Jay/work/HAUS/__current/LandCruiser/website/html/old_ipad.html",
+		"/Jay/work/HAUS/__current/LandCruiser/website/html/iphone.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/safety/buttons/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/interior/seats/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/interior/lightswitch/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/interior/cardflip/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/interior/cardflip2/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/capability/videos/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/capability/windowwipers/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/capability/underneath/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/assets/chapters/capability/buttons/assets.html",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/capability/dragpanel/dragpanel.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/heritage/lazysusan/LazySusan.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/nav/Nav.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles/modules/nav.css",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/.htaccess",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles/modules/lookbook.css",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/ui/Slider.js",
+		"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js/chapters/capability/windowwipers/rain.js"
+	],
+	"find":
+	{
+		"height": 109.703125
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Jay/work/HAUS/__current/TCom/configurator/",
+			"/Jay/work/HAUS/__current/TCom/configurator/model/builder",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/css",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/styles",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/",
+			"/Jay/work/HAUS/__current/LandCruiser/project/dev/release/html/js",
+			"<open folders>",
+			"/Users/jmoretti/Desktop/work/HAUS/barefoot/phase5",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	\n",
+			"3000",
+			")\n",
+			";",
+			"_fileName",
+			"_filename",
+			"_fileName",
+			"social_link_text",
+			"truncate_text",
+			".color",
+			"gps-nav-buttonB",
+			"overlay/js",
+			"updateSummary",
+			"headline",
+			"wra",
+			"empty",
+			".build ",
+			" style=\"\">",
+			" mti_font_element",
+			"grid_3",
+			"section",
+			"log",
+			"clone",
+			"outp",
+			"log",
+			"\"frame\":",
+			"loop",
+			"{ \n    return",
+			"{ \n    return ",
+			" ",
+			"send",
+			"evar26",
+			"eVar36",
+			"look",
+			");\">",
+			"section",
+			"section{",
+			"<section",
+			"section",
+			"reel",
+			"img",
+			"img src",
+			"<video",
+			"img src",
+			"&quot;",
+			"id",
+			"global-nav-left",
+			"close me",
+			"findChapter",
+			"findCha",
+			"viewmanager.curre",
+			"viewmanager.currentCount",
+			"currentCount",
+			"_application.viewmanager.currentCount",
+			"currentCount",
+			"backface",
+			"sendLink",
+			"\" /></",
+			"verticalnav",
+			"wrap",
+			"#wrap",
+			"console",
+			"lookbook",
+			"dummy",
+			"\");",
+			"overlay",
+			"overflowY",
+			"floating-nav-container",
+			"disclosures",
+			"totalPages",
+			"log",
+			"170",
+			"170px",
+			"trigger",
+			"log",
+			"log(",
+			"log",
+			"getIndex",
+			"lookbook",
+			"currentSectionId",
+			"#container",
+			"$('#container')",
+			"$(\"#container\")",
+			"console.",
+			"log",
+			"close",
+			"672px",
+			"wrap",
+			"mask",
+			"lookbook",
+			"show",
+			"hide",
+			"50px",
+			"height:100%",
+			"Rotator",
+			"../../../../i",
+			"images/prototypes/safety",
+			"		",
+			"images/prototypes",
+			"../../../../i",
+			"../../../",
+			"images/prototypes/rain/",
+			"images/prototypes/buttons-overlay",
+			"DragDemos",
+			"545",
+			"lookbook",
+			"img src",
+			"dragHandle",
+			"navclick",
+			"setTitle",
+			"this.preload",
+			"this.preloader",
+			"Section2",
+			"images/",
+			"sprite",
+			"edit",
+			"dummy",
+			"px",
+			"join",
+			"log",
+			"logo",
+			"facebook",
+			"postto",
+			"Edit",
+			"arrow",
+			"src",
+			"cl",
+			"newComments"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"_application.updateSummary",
+			".build360 ",
+			">",
+			" ",
+			"",
+			"{return",
+			"%20",
+			"eVar26",
+			"evar26",
+			"img alt=\"\" src",
+			"img alt =\"\" src",
+			"\"",
+			"164",
+			"164px",
+			"safety_popup_close",
+			"768px",
+			"fadeIn",
+			"fadeOut",
+			"Choices360",
+			"i",
+			"images/chapters/safety/swipe",
+			"images/chapters/interior",
+			"i",
+			"../../../../",
+			"images/chapters/capability/windowwipers/",
+			"images/chapters/capability/buttons",
+			"Safety",
+			"Interior",
+			"Heritage",
+			"Choices",
+			"Capability",
+			"img alt=\"\" src",
+			"",
+			"DragDemos",
+			"images/prototypes/lightswitch/",
+			"?",
+			"/",
+			"'",
+			"\"",
+			"scope.posts",
+			"id",
+			"Comments",
+			"Album",
+			"\"cms/php/",
+			"php/uploader/files/",
+			"BlogAdmin",
+			"ChallengeAdmin",
+			"VideoAdmin",
+			"VideoLibrary",
+			"Challenge",
+			"Blog",
+			"Challenge",
+			"Blog",
+			"FedEx/mailing/images",
+			"Interstate-Regular,",
+			"_orange_on",
+			"_orange_off",
+			"<div"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 306.0
+	},
+	"project": "folio.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Jay/work/Projects/_labs/__JS/Paper/paperjs.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
